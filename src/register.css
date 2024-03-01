@@ -1,0 +1,22 @@
+.line-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #030303;
+    padding: 20px;
+}
+
+.line-with-text::before,
+.line-with-text::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #9c9b9b;
+}
+
+.line-with-text:not(:empty)::before {
+    margin-right: 1.5em;
+}
+
+.line-with-text:not(:empty)::after {
+    margin-left: 1.5em;
+}
